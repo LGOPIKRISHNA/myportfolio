@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopi Krishna Lakkutla - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gopi Krishna Lakkutla</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>B.Tech CSE student at Lakireddy Bali Reddy College of Engineering. Passionate about web development, data science, and cybersecurity.</p>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Frontend Developer at YashTechMine. Intern at Biztron Softech.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Social Media Platform (MERN Stack)</li>
+            <li>AI-based Deepfake Detection System</li>
+            <li>Online Examination System</li>
+            <li>Blood Bank Management System</li>
+        </ul>
+    </section>
+    
+    <section id="achievements">
+        <h2>Achievements & Certifications</h2>
+        <p>Certified in MERN Stack Development, Cyber Security, and Data Science.</p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science & Engineering, LBRCE.</p>
+    </section>
+    
+    <section id="resume">
+        <h2>Resume Upload & Download</h2>
+        <input type="file" id="resumeUpload" accept=".pdf">
+        <button onclick="uploadResume()">Upload</button>
+        <a id="resumeDownload" href="#" download>Download Resume</a>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
